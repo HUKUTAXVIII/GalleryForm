@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,14 @@ namespace GalleryForm
         public GalleryForm()
         {
             InitializeComponent();
+            if (File.Exists("Images")) {
+                Directory.GetFiles("Images/").ToList().ForEach((image)=> { 
+                    
+                    
+                });
+            }
+
+
         }
     }
 }
