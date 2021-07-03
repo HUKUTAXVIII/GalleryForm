@@ -33,15 +33,16 @@ namespace GalleryForm
             this.nextButton = new System.Windows.Forms.Button();
             this.prevButton = new System.Windows.Forms.Button();
             this.imagePanel = new System.Windows.Forms.Panel();
+            this.addButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox
             // 
             this.pictureBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox.Location = new System.Drawing.Point(12, 33);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(776, 312);
+            this.pictureBox.Size = new System.Drawing.Size(776, 313);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
@@ -49,7 +50,7 @@ namespace GalleryForm
             // nextButton
             // 
             this.nextButton.BackColor = System.Drawing.SystemColors.Window;
-            this.nextButton.Location = new System.Drawing.Point(713, 333);
+            this.nextButton.Location = new System.Drawing.Point(713, 352);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(75, 105);
             this.nextButton.TabIndex = 1;
@@ -60,7 +61,7 @@ namespace GalleryForm
             // prevButton
             // 
             this.prevButton.BackColor = System.Drawing.SystemColors.Window;
-            this.prevButton.Location = new System.Drawing.Point(12, 330);
+            this.prevButton.Location = new System.Drawing.Point(12, 352);
             this.prevButton.Name = "prevButton";
             this.prevButton.Size = new System.Drawing.Size(75, 108);
             this.prevButton.TabIndex = 2;
@@ -71,17 +72,29 @@ namespace GalleryForm
             // imagePanel
             // 
             this.imagePanel.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.imagePanel.Location = new System.Drawing.Point(93, 330);
+            this.imagePanel.Location = new System.Drawing.Point(93, 352);
             this.imagePanel.Name = "imagePanel";
             this.imagePanel.Size = new System.Drawing.Size(614, 108);
             this.imagePanel.TabIndex = 3;
+            // 
+            // addButton
+            // 
+            this.addButton.BackColor = System.Drawing.SystemColors.Window;
+            this.addButton.Location = new System.Drawing.Point(713, 2);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(75, 25);
+            this.addButton.TabIndex = 4;
+            this.addButton.Text = "Add";
+            this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // GalleryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 472);
+            this.Controls.Add(this.addButton);
             this.Controls.Add(this.imagePanel);
             this.Controls.Add(this.prevButton);
             this.Controls.Add(this.nextButton);
@@ -100,6 +113,7 @@ namespace GalleryForm
         private System.Windows.Forms.Button nextButton;
         private System.Windows.Forms.Button prevButton;
         private System.Windows.Forms.Panel imagePanel;
+        private System.Windows.Forms.Button addButton;
     }
 }
 
